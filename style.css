@@ -9,6 +9,7 @@
 }
 
 .tile{
-    flex:auto;
+    flex:1;
+    flex-shrink:0;
     background-color: peachpuff;
 }
