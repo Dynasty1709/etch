@@ -7,11 +7,8 @@
     flex-wrap: wrap;
     gap: 8px;
 }
-.tile{
-    width: calc((100% - (3 * 8px)) / 4);
-    background: burlywood;
-}
 
-.tile:hover{
-    background: pink;
+.tile{
+    flex:auto;
+    background-color: peachpuff;
 }
