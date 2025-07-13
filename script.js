@@ -5,10 +5,14 @@ input.addEventListener("click",()=>{
     const value = numsquares.value;
     const number = parseInt(value);
     container.innerHTML = ""
-    for(let i = 0; i<number; i++){
+    let containerSize = 100/number
+    for(let i = 0; i<number * number; i++){
         const tile = document.createElement("div");
         tile.classList.add("tile");
+        tile.style.height = `${containerSize}%` 
+        tile.style.width = `${containerSize}%`
         container.appendChild(tile);
+
     }
     const tiles = document.querySelectorAll(".tile")
 
@@ -28,7 +32,7 @@ reset.addEventListener("click",()=>{
 )
 
 function getRandomColor(){
-    let randomLetter = "0123456789abcdegf"
+    let randomLetter = "0123456789abcdef"
     let randomColor = '#';
     for(let i = 0; i < 6; i++){
 
